@@ -1,8 +1,11 @@
 import React, { useEffect, useMemo, useState } from 'react';
 
 // Vite proxies these paths in development, avoiding browser cross-origin requests.
-const AUTH_BASE_URL = '';
-const CRUD_BASE_URL = '';
+// const AUTH_BASE_URL = '';
+// const CRUD_BASE_URL = '';
+const AUTH_BASE_URL = import.meta.env.VITE_API_URL || '';
+const CRUD_BASE_URL = import.meta.env.VITE_API_URL || '';
+
 
 function App() {
   const [authMode, setAuthMode] = useState('login');
