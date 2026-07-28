@@ -1,0 +1,6 @@
+Flask==3.0.3
+Flask-Cors==4.0.1
+python-dotenv==1.0.1
+PyJWT==2.9.0
+supabase==2.10.0
+truststore==0.10.0

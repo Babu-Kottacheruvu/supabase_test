@@ -1,0 +1,138 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #e5eefb;
+  background: #0b1220;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #111827);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.82);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
+}
+
+.auth-card {
+  max-width: 500px;
+}
+
+.workspace-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 14px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #475569;
+  border-radius: 10px;
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 10px 12px;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  background: #2563eb;
+  color: #fff;
+}
+
+.outline-btn {
+  background: transparent;
+  border: 1px solid #60a5fa;
+}
+
+.danger-btn {
+  background: #dc2626;
+}
+
+.auth-toggle {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.auth-toggle button.active {
+  background: #1d4ed8;
+}
+
+.items-list {
+  display: grid;
+  gap: 12px;
+}
+
+.item-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  background: #111827;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.item-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.message {
+  margin-top: 18px;
+  padding: 12px 14px;
+  background: #172554;
+  border-left: 4px solid #60a5fa;
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .workspace-grid {
+    grid-template-columns: 1fr;
+  }
+}
